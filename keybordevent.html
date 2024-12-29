@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>keyboard Events</title>
+</head>
+<body>
+    <h1>Keyboard Events</h1>
+
+    <form>
+        <label>Key Up</label>
+        <input type="text" onkeyup="up()"><br><br>
+        <label>Key down</label>
+        <input type="text" onkeydown="press()"><br><br>
+        <label>Key press</label>
+        <input type="text" onkeypress="down()">
+    </form>
+    <script>
+        function up()
+        {
+            alert("its keyup events");
+        }
+
+        function down()
+        {
+            alert("its keydown event");
+        }
+        function press()
+        {
+            alert("its kaypress event");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        var sum = 0;
+        var marks = new Array(5);
+
+        for( var z = 0; z<marks.length; z++)
+        {
+            marks [z] = parseInt(prompt("Enter Subject Marks"));
+            sum = sum + marks[z];
+        }
+
+        document.write("Total Subject marks enter from user is..." + sum);
+    </script>
+</body>
+</html>

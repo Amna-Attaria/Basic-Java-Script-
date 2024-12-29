@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Introduction of Document Object Modle</h1>
+    <h2 class="1">By Using Class Name concept display data</h2>
+    <h3 id="one">By Using Id Name concept display data</h3>
+    <script>
+        //by tag name
+        let element = document.getElementsByTagName('h1')[0].innerHTML;
+        document.write(element + "<br>");
+        //by class name
+        let element1 = document.getElementsByClassName('1')[0].innerHTML;
+        document.write(element1 + "<br>");
+        //by id name
+        let element2 = document.getElementById('one').innerHTML;
+        document.write (element2 );
+    </script>
+</body>
+</html>

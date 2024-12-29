@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Div Tags</title>
+    <style>
+        body
+        {
+            background:linear-gradient(185deg, rgb(250, 108, 231),rgb(248, 88, 168),rgb(255, 147, 165));
+            height: 100vh;
+
+        }
+        .flexcountainer
+        {
+            display: flex;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+        }
+        .first
+        {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(113, 67, 155);
+            margin: 20px;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            box-shadow: 10px 10px 10px black;
+ 
+        }
+
+    
+    </style>
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <div class="flexcountainer">
+      <div class="first" data-aos="fade-up"> fade up</div>
+      <div class="first" data-aos="fade-down"> fade down</div>
+      <div class="first" data-aos="fade-right"> fade right </div>
+      <div class="first" data-aos="fade-left"> fade left </div>
+      <div class="first" data-aos="fade-up-right"> fade up right</div>
+      <div class="first" data-aos="fade-up-left"> fade up left</div>
+      <div class="first" data-aos="fade-down-right"> fade down right</div>
+      <div class="first" data-aos="fade-down-left"> fade down left</div>
+      <div class="first" data-aos="flip-left"> flip left </div>
+      <div class="first" data-aos="flip-right"> flip-right</div>
+</div>
+<script>
+    AOS.init();
+  </script>
+    
+</body>
+</html>

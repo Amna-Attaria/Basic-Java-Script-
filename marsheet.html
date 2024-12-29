@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="script.js">
+</head>
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .one
+    {
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+        padding: 20px;
+        font-size: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    form
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+    }
+    input
+    {
+        width: 38%;
+        height: 2em;
+        border-radius: 5px;
+        box-shadow: rgb(55, 100, 55) 5px 5px;
+        border: none;
+        font-size: 1em;
+    }
+    input
+    {
+        font-size: 1.0em;
+    }
+    input::placeholder
+    {
+       color: rgb(50, 51, 51);
+    }
+    button
+    {
+        color: white;
+        padding: 15px;
+        background-color: rgb(52, 92, 12);
+        border: none;
+        font-size: larger;
+        margin-left: 2%;
+        margin-top: 10px;
+        width: 13%;
+        border-radius: 12%;
+    }
+    button:hover
+    { 
+      background-color: rgba(11, 73, 11);
+    }
+</style>
+<body>
+    <div class="one">
+        <header>MARKSHEET</header>
+        </div>
+        <br>
+        <br>
+        <div class="main">
+            <form action="">
+                <div style="margin-left: 10%;">
+                    <input type="text" placeholder="Enter student name....." id="sname">
+                    <input style="margin: 1%;" type="text" placeholder="Enter father nmae...." id="fname">
+                    <input type="number" placeholder="Enter your roll num...." id="rno">
+                    <input style="margin: 1%; "type="text" placeholder="Enter Batch Code...." id="batch">
+                </div>
+                <input type="number" placeholder="Enter Practical R1 Marks" id="r1">
+                <input type="number" placeholder="Enter Practical R2 Marks" id="r2">
+                <input type="number" placeholder="Enter E-Project Marks" id="epro">
+                <input type="number" placeholder="Enter Modular Marks" id="mod">
+                <button type="button" onclick="Grade()">Generate</button>
+            </form>
+        </div>
+</body>
+</html>
